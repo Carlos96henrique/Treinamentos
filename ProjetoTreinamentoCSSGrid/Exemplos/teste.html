@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/sobreMim.css">
+    <link rel="stylesheet" href="../CSS/contato.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sumana" rel="stylesheet">
+  </head>
+
+  <body>
+      <main class="mainBlog">
+        <h1 class="tituloPrincipal">Contato</h1>
+        <div id="formulario">
+          <form>
+            <fieldset>
+              <legend>Dados pessoais:</legend>
+              <label for="nome">Nome completo:</label><br/>
+              <input id="nome" name="nome" placeholder=" Digite nome aqui." pattern="[A-Za-z ']{4,}" title="Digite mais de 4 caracteres." autofocus required></br>
+              <label class="palavraEmail" for="e-mail">E-mail:</label></br>
+              <input id="e-mail"  name="e-mail" placeholder="  Digite seu e-mail." type="email" required>
+            </fieldset>
+
+            <fieldset>
+              <legend>Assunto:</legend>
+              <input type="radio" id="blog" name="assunto" value="blog" required>
+              <label for="blog">Blog</label>
+              <input type="radio" id="servico" name="assunto" value="servico" required>
+              <label for="servico">Serviço</label>
+              <input type="radio" id="outro" name="assunto" value="outro" required>
+              <label for="outro">Outro:</label>
+              <input id="outroTexto" name="assunto" placeholder="  Digite aqui outro assunto.">
+
+              <br/>
+              <label id="mensagem" for="msg">Mensagem:</label>
+              <br/>
+              <textarea  id="msg" name="mensagem" cols="60" rows="10" placeholder="  Digite sua mensagem."></textarea>
+              <button type="submit">Enviar mensagem</button>
+            </fieldset>
+          </form>
+        </div>
+    </main>
+    <img src="../img/eu.jpg" alt="Minha foto" class="imgJoao">
+      <aside class="menuDeNavegacao menuContato">
+        <h1>João da Silva</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="sobreMim.html">Sobre mim</a></li>
+            <li><a href="oBlog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <ul class="iconesRedesSociais iconesContato">
+          <li><a href="https://github.com/joaodasilva" class="github" data-legenda="Veja meus projetos">Github</a></li>
+          <li><a href="https://twitter.com/joaodasilva" class="twitter" data-legenda="Siga-me no Twitter">Twitter</a></li>
+          <li><a href="https://br.linkedin.com/pub/joão-da-silva/32/4/508" class="linkedin" data-legenda="Veja meu currículo">LinkedIn</a></li>
+        </ul>
+        </aside>
+        <footer class="rodapeDaPagina">
+            &copy; João da Silva 2014
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<div class="container-fluid">
+
+    <div class="teste">
+        <a id="voltar" href="">Voltar</a>
+    </div>
+
+    <div id="titulo">
+        <h2>Novo Usuário</h2>
+    </div>
+
+    <div id="formCad" class="campos">
+        <form autocomplete="off" id="campos" ngForm>
+            <div class="row">
+                <div class="col-6">
+                    <label id="nome">Nome*</label>
+                    <input type="text" name="mome" required minlength="10">
+                    <div class="alert">Preencha o nome completo</div>
+                </div>
+
+                <div>
+                    <label id="senha">Senha*</label>
+                    <input type="password" name="senha" required>
+                    <div class="alert">Preencha a senha</div>
+                </div>
+
+                <div>
+                    <label for="TipoContrato" class="row3__label1">Tipo de contrato*</label>
+                    <select name="tipoContrato" id="tipoContrato">
+                        <option value="">Selecione</option>
+                        <option *ngFor="let tipoContrato of tipoContratacoes" [value]="tipoContrato">
+                            {{ tipoContrato }}</option>
+                    </select>
+                    <div class="alert">Selecione o tipo de contrato</div>
+                    <button type="submit" class="cadastrar">Criar Usuário</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label id="usuario">Usuário*</label>
+                    <input type="text" name="usuario" required>
+                    <div class="alert">Preencha o nome do usuário</div>
+                </div>
+
+                <div>
+                    <label id="Confirmar">Confirmar senha*</label>
+                    <input type="password" name="Confirmar">
+                    <div class="alert">Preencha a senha</div>
+                </div>
+
+                <div>
+                    <label for="CargaHoraria" class="row3__label2">Carga horária diária*</label>
+                    <input type="text" name="CargaHoraria">
+                    <div class="alert">Selecione a carga horária</div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div>
+                    <label id="email">E-mail*</label>
+                    <input type="email" name="email" required email>
+                    <div class="alert">Preencha o e-mail</div>
+                </div>
+                <div>
+                    <label id="DataRegistro">Data registro do usuário*</label>
+                    <input type="date" name="DataRegistro">
+                    <div class="alert">Preencha a data</div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+.row{
+    float: left;
+
+}
+
+.row input, #tipoContrato{
+    border: none;
+    border-radius: 5px;
+    margin: 0px 20px 0px 0px;
+}
+
+#tipoContrato{
+    width: 162px;
+    height: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Roboto-Regular';
+}
+
+<div class="col">
+                    <label for="TipoContrato" class="row3__label1">Tipo de contrato*</label>
+                    <select name="tipoContrato" id="tipoContrato">
+                        <option value="">Selecione</option>
+                        <option *ngFor="let tipoContrato of tipoContratacoes" [value]="tipoContrato">
+                            {{ tipoContrato }}</option>
+                    </select>
+                    <div class="alert">Selecione o tipo de contrato</div>
+
